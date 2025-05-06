@@ -1,0 +1,108 @@
+
+:root{
+--bodybg:#F6F6F6;
+--bodyfont:#2B3445;
+
+
+}
+
+/* start global effect */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+font-family: system-ui,system-ui,-apple-system,'Robot',sans-serif;
+}
+
+body{background-color:var(--bodybg);
+    color: var(--bodyfont);}
+/* end global effect */
+/*start style scroll */ 
+html{
+    scroll-behavior: smooth;
+} 
+
+::-webkit-scrollbar {
+    width: 0.88rem;
+   }  
+  ::-webkit-scrollbar-track {
+    border: 7px solid #292c3b;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background-color: #d4d4d8;
+    }
+  ::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  /* for Firefox */
+   html {scrollbar-color: #9e4673 #3d4a59;}
+/* end style scroll */ 
+
+/* html elements */
+a, button{all: unset;display: inline-block;} 
+button:active, a:active{scale: 0.9;}
+button:hover, a:hover{cursor: pointer;}
+li{list-style: none;}
+
+/* my class */
+.flex{display: flex;align-items: center;}
+
+
+/* start style container */
+.container{
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+/* screen */
+/* small screen */
+@media (min-width:768px)
+{
+.container{
+    width: 768px;
+}
+/* mediam screen */
+}
+@media (min-width:992px)
+{
+.container{
+    width: 980px;
+}
+/* large screen */
+
+}@media (min-width:1200px)
+{
+.container{
+    width: 1180x;
+}
+}
+/* end style container */
+
+.top-bg{
+background-image:url(../imge/bac.jpg);
+height: 100vh;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+@media(max-width:826px)
+{.top-bg{background-position: left;
+
+
+}
+
+
+}
+
+i{padding-right: 5px;}
+

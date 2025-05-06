@@ -1,0 +1,81 @@
+h1{
+    color: #2b3445;
+    font-size: 35px;
+    font-weight: 700;
+    padding-left: 146px;
+    padding-top: 80px;
+}
+
+
+
+
+.main-content .prodects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 0;
+}
+.prodects{padding: 120px;}
+.main-content .prodects .card{box-shadow: 0 0 19px -12px #A9A9A9 ;
+     transition: 0.1s;
+   
+    border-radius: 7px;
+    }
+.main-content .prodects .card:hover{scale: 1.01;}
+.main-content .prodects .card img{width: 100%;
+    height: 100%;
+    max-height: 300px;
+    max-width: 100%;
+border-radius: 7px 7px 0 0;
+
+}
+.main-content .prodects .card h1{color:#2b3445 ;
+font-size: 21.72px;
+font-weight: 700;
+padding: 5px 5px 0 5px;
+margin-bottom: 5px;
+
+}
+.main-content .prodects .card p{
+    color: #2b3445;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    vertical-align:baseline;
+    padding:0 5px 5px 5px;
+}
+.main-content .prodects .card .price{
+    color: #c70028;
+    font-size: 16px;
+    font-weight: 700;
+    vertical-align:baseline;
+    padding: 20px ;
+}
+.main-content .prodects .card .card-price{display: flex;
+align-items: center;justify-content: space-between;}
+.main-content .prodects .card .card-price button{
+    background-color: #884588;
+    color: white;
+    padding: 6px 9px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.main-content .prodects .card .card-price button i{font-size:13px ;}
+
+
+
+@media(max-width:450px){
+    .main-content .prodects{width: 430px;}
+.footer-bottom{width: 434px;}
+.top-bg{width: 434px;}
+    .footer{width: 434px;}
+    .card{margin-right: 78px;margin-top: 30px;}
+    .main-content .prodects .card img{height: 100%;
+        max-height: 250px;}
+        h1{padding-left: 0;padding-top: 0;font-size: 29px;}
+ 
+        .main-content{width: 430px;}
+        .logo{display: none;}
+       
+
+}

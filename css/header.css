@@ -1,0 +1,64 @@
+header{display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+padding-left:150px;
+padding-right:150px;
+padding-top: 1.2rem ;
+min-width: 393px;
+}
+header .logo .image{width: 25px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+header .logo .image h3{padding-left: 6px;
+    color: #2b3445;
+    font-size: 16px;
+    font-weight: 700;
+    
+    }
+header .logo h2{
+    color: #2b3445;
+    font-size: 16px;
+    font-weight: 400;
+}
+nav{position: relative;
+
+}
+nav ul{display:flex ;flex-wrap: wrap;}
+nav ul li{padding:15px 10px;
+}
+nav ul li a{border:1px black solid ;
+border-radius: 22px;
+padding:5px 20px;
+transition: 0.3s;
+font-size: 0.9rem;
+font-weight: 500;
+}
+
+.active,nav ul li a:hover{
+    background-color:#2B3445 ;
+    color: #9FC5EF;
+}
+
+nav h3{position: absolute;
+top: 3px;
+right: 274px;
+background-color: #FF5A7B;
+color: white;
+border-radius: 15px;
+padding: 5px 0;
+width: 30px;
+font-size: 13px;
+}
+
+@media(max-width:913px){
+header{padding-left: 20px;justify-content: space-around1;
+  
+padding-right: 20px;}
+nav ul li{padding:10px 5px ;}
+nav h3{display: none;}
+}
